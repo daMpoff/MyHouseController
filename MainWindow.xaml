@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MyHouseController"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500">
     <Grid>
         <TabControl
             Style="{StaticResource MaterialDesignFilledTabControl}"
@@ -14,7 +14,84 @@
             materialDesign:ColorZoneAssist.Foreground="White"
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TabStripPlacement="Left">
             <TabItem Header="Весь Дом" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                <Grid Background="#343434"></Grid>
+                <Grid Background="#343434">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <materialDesign:Card Margin="10" Grid.Row="0" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="White" BorderThickness="2" CornerRadius="15">
+                                <Image Source="/Resources/kettle.png"></Image>
+                            </Border>
+                            <Button Grid.Column="3" Grid.Row="1" Margin="3" Foreground="White" Background="Red" Content="OFF" ></Button>
+                        </Grid>
+                    </materialDesign:Card>
+                    <materialDesign:Card Margin="10" Grid.Row="0" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="White" BorderThickness="2" CornerRadius="15">
+                                <Image Source="/Resources/televisor.png"></Image>
+                            </Border>
+                            <Button Grid.Column="3" Grid.Row="1" Margin="3" Foreground="White" Background="Red" Content="OFF" ></Button>
+                        </Grid>
+                    </materialDesign:Card>
+                    <materialDesign:Card Margin="10" Grid.Row="1" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="White" BorderThickness="2" CornerRadius="15">
+                                <Image Source="/Resources/speaker.png"></Image>
+                            </Border>
+                            <Button Grid.Column="3" Grid.Row="1" Margin="3" Foreground="White" Background="Red" Content="OFF" ></Button>
+                        </Grid>
+                    </materialDesign:Card>
+                    <materialDesign:Card Margin="10" Grid.Row="1" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="White" BorderThickness="2" CornerRadius="15">
+                                <Image Source="/Resources/washingMachine.png"></Image>
+                            </Border>
+                            <Button Grid.Column="3" Grid.Row="1" Margin="3" Foreground="White" Background="Red" Content="OFF" ></Button>
+                        </Grid>
+                    </materialDesign:Card>
+                </Grid>
             </TabItem>
             <TabItem Header="Кухня" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <Grid Background="#343434"></Grid>
